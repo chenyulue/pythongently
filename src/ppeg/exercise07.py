@@ -9,3 +9,6 @@ def print_ascii_table() -> None:
     chars = (chr(i) for i in code_points)
     strings = (f"{code_point} {char}" for code_point, char in zip(code_points, chars))
     print("\n".join(strings))
+
+def run() -> None:
+    print_ascii_table()
