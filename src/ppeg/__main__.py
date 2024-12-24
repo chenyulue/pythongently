@@ -10,10 +10,16 @@ def get_args() -> argparse.Namespace:
         epilog="Thanks for Al Sweigart's work",
     )
     parser.add_argument("number", type=int, help="Number of exercise")
+    parser.add_argument(
+        "-p", "--parameter", type=str, help="Parameter passed to the function"
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = get_args()
     module = importlib.import_module(f"ppeg.exercise{args.number:02d}")
-    getattr(module, "run")()
+    if args.parameter is None:
+        getattr(module, "run")()
+    else:
+        getattr(module, "run")(args.parameter)
