@@ -11,7 +11,11 @@ def get_args() -> argparse.Namespace:
     )
     parser.add_argument("number", type=int, help="Number of exercise")
     parser.add_argument(
-        "-p", "--parameter", type=str, help="Parameter passed to the function"
+        "-p",
+        "--parameter",
+        type=str,
+        nargs="+",
+        help="Parameter passed to the function",
     )
     return parser.parse_args()
 
@@ -22,4 +26,4 @@ def main() -> None:
     if args.parameter is None:
         getattr(module, "run")()
     else:
-        getattr(module, "run")(args.parameter)
+        getattr(module, "run")(*args.parameter)

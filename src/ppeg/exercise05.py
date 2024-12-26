@@ -25,3 +25,7 @@ def fizz_buzz(up_to: int) -> None:
     
     fizz_buzz_txt = ' '.join(_fizz_buzz_helper(up_to))
     print(fizz_buzz_txt)
+
+
+def run(n: str) -> None:
+    fizz_buzz(int(n))
