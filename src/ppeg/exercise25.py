@@ -25,3 +25,17 @@
 
 10|10 20 30 40 50 60 70 80 90 100
 """
+
+
+def print_multiplication_table() -> None:
+    header = ["|".rjust(3)] + [str(i).rjust(4) for i in range(1, 11)]
+    separator = ["+".rjust(3, "-")] + ["-".rjust(4, "-") for _ in range(1, 11)]
+    print("".join(header))
+    print("".join(separator))
+
+    for i in range(1, 11):
+        row = [f"{i:2d}|"] + [str(i * j).rjust(4) for j in range(1, 11)]
+        print("".join(row))
+
+def run() -> None:
+    print_multiplication_table()
