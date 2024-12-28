@@ -13,4 +13,4 @@ def reverse_string(text: str) -> str:
 
 
 def run(txt: str) -> None:
-    print(reverse_string(txt))
+    print("Reversed string:", reverse_string(txt))

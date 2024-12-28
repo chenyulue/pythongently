@@ -38,6 +38,6 @@ def run(num: str) -> None:
         n = float(num)
     else:
         n = int(num)
-    print(comma_format(n))
+    print("Comma formatted:", comma_format(n))
         
     

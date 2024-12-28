@@ -5,3 +5,8 @@
 def get_cost_of_coffee(number_of_coffees: int, price_per_coffee: float) -> float:
     n, r = divmod(number_of_coffees, 9)
     return n * 8 * price_per_coffee + r * price_per_coffee
+
+def run() -> None:
+    n = input("Number of coffees: ")
+    p = input("Price per coffee: ")
+    print(f"Total cost: {get_cost_of_coffee(int(n), float(p))}")

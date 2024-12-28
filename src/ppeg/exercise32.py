@@ -25,4 +25,4 @@ def convert_str_to_int(string_num: str) -> int:
     return sign * reduce(lambda x, y: 10 * x + y, map(str_to_digit, string_num))
 
 def run(num: str) -> None:
-    print(convert_str_to_int(num))
+    print(f'"{num}"', "=>", convert_str_to_int(num))

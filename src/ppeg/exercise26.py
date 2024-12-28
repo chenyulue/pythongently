@@ -14,3 +14,7 @@ def print_handshakes(people: Sequence[str]) -> int:
         print(f"{p1} shakes hands with {p2}")
 
     return len(pairs)
+
+def run(*args: str) -> None:
+    print("Handshakes are:")
+    print_handshakes(args)

@@ -20,3 +20,11 @@ def convert_to_celsius(degree_fahrenheit: Decimal | float, ndigits: int = 2) -> 
         degree_fahrenheit = Decimal(degree_fahrenheit)
     result = (degree_fahrenheit - 32) * 5 / 9
     return round(result, 2)
+
+
+def run() -> None:
+    degree = input("Input celsius: ")
+    print(f"{degree} celsius is {convert_to_fahrenheit(float(degree))} fahrenheit")
+
+    degree = input("Input fahrenheit: ")
+    print(f"{degree} fahrenheit is {convert_to_celsius(float(degree))} celsius")

@@ -15,3 +15,11 @@ def rps_winner(player1: RPS, player2: RPS) -> Winner:
             return "player one"
         case _:
             return "player two"
+
+
+def run(p1, p2) -> None:
+    result = rps_winner(p1, p2)
+    if result == "tie":
+        print("player one and two have a draw.")
+    else:
+        print(result, "wins.")

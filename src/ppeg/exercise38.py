@@ -15,4 +15,4 @@ def shuffle(values: list[Any]) -> None:
 def run(*values: str) -> None:
     vs = list(values)
     shuffle(vs)
-    print(vs)
+    print("Shuffled values:", vs)

@@ -17,3 +17,8 @@ def get_biggest(numbers: Sequence[float]) -> float | None:
         return None
 
     return reduce(lambda x, y: x if x > y else y, numbers)
+
+def run(*args: str) -> None:
+    ns = list(map(int, args))
+    print("Maxium Number:", get_biggest(ns))
+    print("Minimum Number:", get_smallest(ns))

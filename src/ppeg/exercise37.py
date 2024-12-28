@@ -26,4 +26,4 @@ def make_change(amount: int) -> dict[Coin, int]:
 
 
 def run(amount: str) -> None:
-    print(make_change(int(amount)))
+    print("Changes:", make_change(int(amount)))

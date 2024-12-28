@@ -24,3 +24,12 @@ def surface_area(length: float, width: float, height: float) -> float:
     if length < 0 or width < 0 or height < 0:
         raise ValueError("length, width and height cannot be negative.")
     return (length*width + length*height + width*height) * 2
+
+def run() -> None:
+    length = input("Enter the length: ")
+    width = input("Enter the width: ")
+    height: str = input("Enter the height: ")
+    print(f"Area: {area(float(length), float(width))}")
+    print(f"Perimeter: {perimeter(float(length), float(width))}")
+    print(f"Volume: {volume(float(length), float(width), float(height))}")
+    print(f"Surface Area: {surface_area(float(length), float(width), float(height))}")

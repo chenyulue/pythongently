@@ -18,4 +18,4 @@ def get_title_case(text: str) -> str:
 
 
 def run(txt: str) -> None:
-    print(get_title_case(txt))
+    print("Title case:", get_title_case(txt))

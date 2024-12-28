@@ -16,3 +16,6 @@ def ordinal_suffix(number: int) -> str:
         return f"{number}rd"
     else:
         return f"{number}th"
+
+def run(num: str) -> None:
+    print(num, "with ordinal suffix is", ordinal_suffix(int(num)))

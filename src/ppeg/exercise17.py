@@ -5,3 +5,7 @@ import random
 
 def roll_dice(number_of_dice: int) -> int:
     return sum(random.randint(1, 6) for _ in range(number_of_dice))
+
+def run(num: str) -> None:
+    n = int(num)
+    print(f"Rolling {n} dices has the sum of", roll_dice(n))

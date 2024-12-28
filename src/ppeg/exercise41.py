@@ -18,4 +18,4 @@ def rot13(text: str) -> str:
     return "".join(map(cipher_letter, text))
 
 def run(text: str) -> None:
-    print(rot13(text))
+    print("Encrypted text:", rot13(text))

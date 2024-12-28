@@ -18,3 +18,8 @@ def median(numbers: Sequence[float]) -> float | None:
         return numbers[count // 2]
     else:
         return (numbers[count // 2] + numbers[count // 2 - 1]) / 2
+
+
+def run(*args: str) -> None:
+    ns = list(map(float, args))
+    print("The median is:", median(ns))

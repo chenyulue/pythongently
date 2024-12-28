@@ -9,3 +9,7 @@ def is_leap_year(year: int) -> bool:
         return True
     else:
         return year % 400 == 0
+
+def run(year: str) -> None:
+    predicate = "is" if is_leap_year(int(year)) else "is not"
+    print(f"The year {year} {predicate} leap year")

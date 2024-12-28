@@ -17,3 +17,8 @@ def average(numbers: Sequence[float]) -> float | None:
         total += number
 
     return total / count
+
+
+def run(*args: str) -> None:
+    ns = list(map(float, args))
+    print("The average is:", average(ns))

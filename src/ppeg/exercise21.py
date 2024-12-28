@@ -16,3 +16,7 @@ def is_valid_date(year: int, month: int, day: int) -> bool:
             return 1 <= day <= 28
         case _:
             return False
+
+def run(year: str, month: str, day: str) -> None:
+    predicate = "is" if is_valid_date(int(year), int(month), int(day)) else "is not"
+    print(f"The date {year}-{month}-{day} {predicate} a valid date.")

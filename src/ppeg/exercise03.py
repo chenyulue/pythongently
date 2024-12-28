@@ -22,3 +22,11 @@ def is_even(number: Number) -> bool:
             return False
         case _:
             return number % 2 == 0
+
+def run(num: str) -> None:
+    if '.' in num:
+        n = float(num)
+    else:
+        n = int(num)
+    print(f"{num} is odd: {is_odd(n)}")
+    print(f"{num} is even: {is_even(n)}")

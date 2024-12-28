@@ -16,3 +16,8 @@ def mode(numbers: Sequence[float]) -> float | None:
         counts[number] = counts.get(number, 0) + 1
 
     return max(counts.keys(), key=lambda k: counts[k])
+
+
+def run(*args: str) -> None:
+    ns = list(map(float, args))
+    print("The mode is:", mode(ns))

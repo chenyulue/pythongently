@@ -27,3 +27,13 @@ def read_from_file(filename: str | Path, encoding: str = "utf-8") -> str:
     if not isinstance(filename, Path):
         filename = Path(filename)
     return filename.read_text(encoding=encoding)
+
+
+def run() -> None:
+    print("Writing files ......")
+    write_to_file("test.txt", "Hello, world!")
+    append_to_file("test.txt", " How are you?")
+    print("Reading files ......")
+    print(read_from_file("test.txt"))
+
+    Path("test.txt").unlink()

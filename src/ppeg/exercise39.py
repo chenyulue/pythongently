@@ -34,4 +34,4 @@ def collatz(starting_number: int) -> list[int]:
 
 
 def run(start: str) -> None:
-    print(collatz(int(start)))
+    print("Collatz sequence:", collatz(int(start)))

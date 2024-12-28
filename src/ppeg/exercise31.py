@@ -36,5 +36,4 @@ def convert_int_to_str(integer_num: int) -> str:
 
 
 def run(num: str) -> None:
-    print(int(num))
-    print(convert_int_to_str(int(num)))
+    print(int(num), "=>", f'"{convert_int_to_str(int(num))}"')

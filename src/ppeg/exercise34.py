@@ -13,4 +13,4 @@ def get_uppercase(text: str) -> str:
 
 
 def run(text: str) -> None:
-    print(get_uppercase(text))
+    print("Uppcase:", get_uppercase(text))

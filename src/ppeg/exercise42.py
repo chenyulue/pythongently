@@ -16,4 +16,4 @@ def bubble_sort(numbers: list[int]) -> list[int]:
 
 def run(*numbers: str) -> None:
     n = list(map(int, numbers))
-    print(bubble_sort(n))
+    print("Sorted list:", bubble_sort(n))

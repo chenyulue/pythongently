@@ -24,3 +24,6 @@ def find_and_replace(text: str, old_text: str, new_text: str) -> str:
     replaced_text.append(text[pre : i])
     
     return ''.join(replaced_text)
+
+def run(text: str, old_text: str, new_text: str) -> None:
+    print("Replaced text:", find_and_replace(text, old_text, new_text))

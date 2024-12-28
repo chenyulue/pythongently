@@ -24,3 +24,6 @@ def get_hours_minutes_seconds(total_seconds: int) -> str:
             time_strs.append(f"{n}s")
 
     return " ".join(time_strs)
+
+def run(sec: str) -> None:
+    print(f"{sec} seconds is {get_hours_minutes_seconds(int(sec))}")

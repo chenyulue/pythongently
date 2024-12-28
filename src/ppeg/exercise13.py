@@ -18,3 +18,9 @@ def calculate_product(numbers: Sequence[float]) -> float:
         total *= number
 
     return total
+
+
+def run(*args: str) -> None:
+    n = list(map(float, args))
+    print("The sum is:", calculate_sum(n))
+    print("The product is:", calculate_product(n))
