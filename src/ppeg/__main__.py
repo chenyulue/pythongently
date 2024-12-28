@@ -15,7 +15,7 @@ def get_args() -> argparse.Namespace:
         "--parameter",
         type=str,
         nargs="+",
-        help="Parameter passed to the function",
+        help="One or more parameters (separated by space) passed to the function",
     )
     return parser.parse_args()
 
